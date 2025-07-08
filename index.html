@@ -19,11 +19,10 @@
 
     .main-title {
       font-family: 'Great Vibes', cursive;
-      font-size: 6vw;
+      font-size: 32px;
       color: #6c3483;
-      margin-bottom: 2vh;
-      animation: fadeInTitle 3s ease-out forwards;
-      text-align: center;
+      margin-bottom: 20px;
+      animation: fadeInTitle 2s ease-out forwards;
     }
 
     @keyframes fadeInTitle {
@@ -39,12 +38,10 @@
 
     .envelope-container {
       position: relative;
-      width: 80%;
-      max-width: 300px;
-      height: 2vw;
-      max-height: 200px;
+      width: 300px;
+      height: 200px;
       perspective: 1000px;
-      animation: bounce 3s ease-in-out;
+      animation: bounce 2s ease-in-out;
       animation-fill-mode: forwards;
     }
 
@@ -78,7 +75,7 @@
       clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
       z-index: 3;
       transform-origin: top;
-      animation: openFlap 2s ease-out 3s forwards;
+      animation: openFlap 1s ease-out 2s forwards;
     }
 
     @keyframes openFlap {
@@ -89,9 +86,10 @@
     .letter {
       position: absolute;
       width: 90%;
+      max-width: 280px;
       background: #fff0ff;
       color: #FF00FF;
-      padding: 2vh;
+      padding: 20px;
       box-sizing: border-box;
       z-index: 2;
       top: 100%;
@@ -128,11 +126,11 @@
 
     h1 {
       text-align: center;
-      font-size: 5vw;
-      margin-bottom: 2vh;
+      font-size: 24px;
+      margin-bottom: 20px;
       color: #8e44ad;
       font-family: 'Great Vibes', cursive;
-      animation: fadeInUp 2.5s ease-out 6.5s forwards;
+      animation: fadeInUp 1.5s ease-out 5.5s forwards;
       opacity: 0;
     }
 
@@ -149,70 +147,64 @@
 
     .letter p {
       font-family: 'Great Vibes', cursive;
-      font-size: 4vw;
+      font-size: 16px;
       text-align: center;
-      margin: 1vh 0;
+      margin: 5px 0;
     }
 
     .footer {
-      margin-top: 2vh;
+      margin-top: 10px;
       font-weight: bold;
       text-align: center;
     }
 
     .buttons {
-      margin-top: 4vh;
+      margin-top: 20px;
       display: flex;
       justify-content: center;
-      gap: 2vw;
+      gap: 10px;
       flex-wrap: wrap;
     }
 
     .buttons a {
       text-decoration: none;
-      padding: 1vh 2vw;
+      padding: 10px 20px;
       background-color: #b266ff;
       color: white;
       border-radius: 5px;
-      font-size: 3vw;
+      font-size: 16px;
       transition: background 0.3s;
     }
 
     .buttons a:hover {
       background-color: #9933ff;
     }
-  
-
+   
     @media (max-width: 600px) {
       .main-title {
-        font-size: 8vw;
-      }
-
-      .envelope-container {
-        width: 90%;
-        height: 30vw;
+        font-size: 28px; 
       }
 
       .letter {
-        padding: 4vw;
+        padding: 15px;
       }
 
       .buttons a {
-        font-size: 5vw;
+        font-size: 14px; 
       }
     }
 
     @media (max-width: 400px) {
       .main-title {
-        font-size: 10vw;
+        font-size: 24px; 
       }
 
       .letter {
-        padding: 6vw;
+        padding: 10px;
       }
 
       .buttons a {
-        font-size: 6vw;
+        font-size: 12px; /* Más pequeño en dispositivos muy pequeños */
       }
     }
   </style>
@@ -244,4 +236,3 @@
 
 </body>
 </html>
-
