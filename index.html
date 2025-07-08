@@ -19,9 +19,9 @@
 
     .main-title {
       font-family: 'Great Vibes', cursive;
-      font-size: 32px;
+      font-size: 60px;
       color: #6c3483;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       animation: fadeInTitle 2s ease-out forwards;
     }
 
@@ -84,12 +84,12 @@
     }
 
     .letter {
-      position: absolute;
-      width: 90%;
-      max-width: 280px;
+      position: relative;
+      width: 150%;
+      max-width: 600px;
       background: #fff0ff;
       color: #FF00FF;
-      padding: 20px;
+      padding: 15px;
       box-sizing: border-box;
       z-index: 2;
       top: 100%;
@@ -120,7 +120,7 @@
       }
       100% {
         transform: translate(-50%, -50%);
-        top: 50%;
+        top: -20%;
       }
     }
 
@@ -147,7 +147,7 @@
 
     .letter p {
       font-family: 'Great Vibes', cursive;
-      font-size: 16px;
+      font-size: 20px;
       text-align: center;
       margin: 5px 0;
     }
@@ -233,6 +233,12 @@
     </div>
   </div>
 </div>
+<script>
+  // Al comenzar la animación de la carta, hacemos que el sobre desaparezca
+  setTimeout(function() {
+    document.querySelector('.envelope').style.opacity = 0;
+  }, 3000); // El sobre desaparecerá después de 3 segundos, cuando la carta esté volando
+</script>
 
 </body>
 </html>
