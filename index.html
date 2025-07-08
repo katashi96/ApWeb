@@ -19,10 +19,11 @@
 
     .main-title {
       font-family: 'Great Vibes', cursive;
-      font-size: 28px;
+      font-size: 6vw;
       color: #6c3483;
-      margin-bottom: 20px;
-      animation: fadeInTitle 2s ease-out forwards;
+      margin-bottom: 2vh;
+      animation: fadeInTitle 3s ease-out forwards;
+      text-align: center;
     }
 
     @keyframes fadeInTitle {
@@ -38,10 +39,12 @@
 
     .envelope-container {
       position: relative;
-      width: 300px;
-      height: 200px;
+      width: 80%;
+      max-width: 300px;
+      height: 2vw;
+      max-height: 200px;
       perspective: 1000px;
-      animation: bounce 2s ease-in-out;
+      animation: bounce 3s ease-in-out;
       animation-fill-mode: forwards;
     }
 
@@ -75,7 +78,7 @@
       clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
       z-index: 3;
       transform-origin: top;
-      animation: openFlap 1s ease-out 2s forwards;
+      animation: openFlap 2s ease-out 3s forwards;
     }
 
     @keyframes openFlap {
@@ -85,10 +88,10 @@
 
     .letter {
       position: absolute;
-      width: 280px;
+      width: 90%;
       background: #fff0ff;
       color: #FF00FF;
-      padding: 20px;
+      padding: 2vh;
       box-sizing: border-box;
       z-index: 2;
       top: 100%;
@@ -125,11 +128,11 @@
 
     h1 {
       text-align: center;
-      font-size: 28px;
-      margin-bottom: 15px;
+      font-size: 5vw;
+      margin-bottom: 2vh;
       color: #8e44ad;
       font-family: 'Great Vibes', cursive;
-      animation: fadeInUp 1.5s ease-out 5.5s forwards;
+      animation: fadeInUp 2.5s ease-out 6.5s forwards;
       opacity: 0;
     }
 
@@ -146,37 +149,71 @@
 
     .letter p {
       font-family: 'Great Vibes', cursive;
-      font-size: 20px;
+      font-size: 4vw;
       text-align: center;
-      margin: 5px 0;
+      margin: 1vh 0;
     }
 
     .footer {
-      margin-top: 10px;
+      margin-top: 2vh;
       font-weight: bold;
       text-align: center;
     }
 
     .buttons {
-      margin-top: 15px;
+      margin-top: 4vh;
       display: flex;
       justify-content: center;
-      gap: 10px;
+      gap: 2vw;
       flex-wrap: wrap;
     }
 
     .buttons a {
       text-decoration: none;
-      padding: 8px 14px;
+      padding: 1vh 2vw;
       background-color: #b266ff;
       color: white;
       border-radius: 5px;
-      font-size: 14px;
+      font-size: 3vw;
       transition: background 0.3s;
     }
 
     .buttons a:hover {
       background-color: #9933ff;
+    }
+  
+
+    @media (max-width: 600px) {
+      .main-title {
+        font-size: 8vw;
+      }
+
+      .envelope-container {
+        width: 90%;
+        height: 30vw;
+      }
+
+      .letter {
+        padding: 4vw;
+      }
+
+      .buttons a {
+        font-size: 5vw;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .main-title {
+        font-size: 10vw;
+      }
+
+      .letter {
+        padding: 6vw;
+      }
+
+      .buttons a {
+        font-size: 6vw;
+      }
     }
   </style>
 </head>
