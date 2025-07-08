@@ -127,6 +127,7 @@ body {
 .div_nombre_mavi {
 	width: 100%;
 	top: 0;
+	color: #8c177c;
 	height: calc(12% + 8vw);
 	max-height: 195px;
 }
