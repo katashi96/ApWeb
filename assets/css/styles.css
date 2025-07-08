@@ -74,7 +74,7 @@ body {
 @media (min-width: 800px) {
 	.imgPortada {
 		background-color: var(--white_paper_up);
-		background-image: url(../galeria/abi4.jpg);
+		background-image: url(./galeria/abi4.jpg);
 		background-position: center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
